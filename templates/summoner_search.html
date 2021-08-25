@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>소환사 검색</h1>
-    <form action="" method="post">
+    <form action="{{url_for('get')}}" method="get">
         <input type="text" name="summoner_name">
         <input type="submit" value="검색">
     </form>
