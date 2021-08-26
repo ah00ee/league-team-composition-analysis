@@ -16,7 +16,7 @@ def search():
 @app.route('/data', methods=['GET'])
 def get():
     summonerName = request.args.get('summoner_name')
-    apiKey = 'Your Riot API KEY'
+    apiKey = 'RGAPI-398c4cbc-6678-4243-b34b-b81399ccf6ea' #'Your Riot API KEY'
     url = f'https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/{summonerName}?api_key={apiKey}'
     summonerInfo = json.loads(requests.get(url).text)
 
